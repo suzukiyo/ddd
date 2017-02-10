@@ -1,0 +1,63 @@
+description 'REST APIのサンプル'
+
+buildscript {
+    ext {
+        springBootVersion = '1.4.1.RELEASE'
+        encoding = 'UTF-8'
+        compatibility = 1.8
+    }
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+sourceCompatibility = compatibility
+targetCompatibility = compatibility
+
+repositories {
+    maven { url 'https://repo.spring.io/libs-snapshot' }
+    mavenCentral()
+}
+
+jar {
+    baseName = 'ddd'
+    version = '0.1.0'
+}
+
+ext['thymeleaf.version'] = '3.0.1.RELEASE'
+ext['thymeleaf-layout-dialect.version'] = '2.0.3'
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
+
+    compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.1.1")
+    compile("org.mybatis:mybatis-typehandlers-jsr310:1.0.0")
+    runtime("com.h2database:h2:1.4.187")
+
+    testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
+    compile("com.jayway.restassured:rest-assured:2.9.0")
+
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf:${springBootVersion}")
+
+    compile("org.flywaydb:flyway-core:3.2.1")
+    compile("mysql:mysql-connector-java:5.1.38")
+
+  }
+
+bootRun {
+    if (project.hasProperty('args')) {
+        args project.args.split('\\s+')
+    }
+}
+
+bootRepackage {
+    executable = true
+}

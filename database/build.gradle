@@ -1,0 +1,22 @@
+buildscript {
+    dependencies {
+        classpath ("mysql:mysql-connector-java:5.1.38")
+    }
+}
+
+plugins {
+    id "org.flywaydb.flyway" version "4.0"
+}
+
+if (!hasProperty('env')) { ext.env = 'development' }
+if (!hasProperty('schema')) { ext.schema = 'introduction' }
+apply from: "env/${env}.gradle"
+
+flyway {
+    driver = 'com.mysql.jdbc.Driver'
+    url = database.url
+    user = database.user
+    password = database.password
+    schemas = ["${schema}"]
+    locations = ["filesystem:database/src/main/resources/db/migration/${schema}/"]
+}

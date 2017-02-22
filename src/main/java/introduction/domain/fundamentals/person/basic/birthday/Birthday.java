@@ -1,6 +1,4 @@
-package introduction.domain.fundamentals.basic.birthday;
-
-import introduction.domain.fundamentals.basic.Age;
+package introduction.domain.fundamentals.person.basic.birthday;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;

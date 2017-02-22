@@ -1,4 +1,4 @@
-package introduction.domain.fundamentals.basic;
+package introduction.domain.fundamentals.person.basic.gender;
 
 import introduction.apllication.configuration.messagesource.MessageResolver;
 

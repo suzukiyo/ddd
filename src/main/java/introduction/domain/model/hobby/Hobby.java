@@ -1,5 +1,5 @@
 package introduction.domain.model.hobby;
 
-class Hobby {
+public class Hobby {
     String value;
 }

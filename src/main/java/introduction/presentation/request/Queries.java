@@ -4,6 +4,8 @@ public class Queries {
     String[] filter;
 
     public Filters filter() {
-        return Filter.of(filter);
+        Filters filters = Filter.of(filter);
+        if (filters.isEmpty()) return Filters.all();
+        return filters;
     }
 }

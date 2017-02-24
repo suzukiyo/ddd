@@ -3,9 +3,9 @@
 <mapper namespace="introduction.infrastructure.datasource.IntroductionSummaryMapper">
 
     <resultMap id="person" type="introduction.domain.fundamentals.person.Person">
-        <result property="personBasic.birthday.year" column="birthday_year" />
-        <result property="personBasic.birthday.month" column="birthday_month" />
-        <result property="personBasic.birthday.day" column="birthday_day" />
+        <result property="personBasic.birthday.year.value" column="birthday_year" />
+        <result property="personBasic.birthday.month.value" column="birthday_month" />
+        <result property="personBasic.birthday.day.value" column="birthday_day" />
     </resultMap>
     <select id="findPerson" resultMap="person">
         SELECT

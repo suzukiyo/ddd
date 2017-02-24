@@ -2,7 +2,7 @@ description 'REST APIのサンプル'
 
 buildscript {
     ext {
-        springBootVersion = '1.4.1.RELEASE'
+        springBootVersion = '1.5.1.RELEASE'
         encoding = 'UTF-8'
         compatibility = 1.8
     }
@@ -18,9 +18,6 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
-
-sourceCompatibility = compatibility
-targetCompatibility = compatibility
 
 repositories {
     maven { url 'https://repo.spring.io/libs-snapshot' }
@@ -43,6 +40,7 @@ dependencies {
     runtime("com.h2database:h2:1.4.187")
 
     testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
+    testCompile("org.mockito:mockito-core:2.6.8")
     compile("com.jayway.restassured:rest-assured:2.9.0")
 
     compile("org.springframework.boot:spring-boot-starter-thymeleaf:${springBootVersion}")

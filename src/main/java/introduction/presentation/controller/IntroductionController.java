@@ -2,20 +2,22 @@ package introduction.presentation.controller;
 
 import introduction.apllication.service.IntroductionService;
 import introduction.domain.model.IntroductionSummary;
+import introduction.presentation.request.Queries;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping(path = "/introduction")
 public class IntroductionController {
 
     @Autowired
     IntroductionService introductionService;
 
-    @RequestMapping(path = "/", method = RequestMethod.GET)
-    public IntroductionSummary findSummary() {
-        return introductionService.findSummary();
+    @RequestMapping(method= RequestMethod.GET)
+    @ResponseStatus(value = HttpStatus.OK)
+    public IntroductionSummary findSummary(@ModelAttribute Queries queries) {
+        return introductionService.findSummary(queries.filter());
     }
 
 }

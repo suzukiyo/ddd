@@ -1,5 +1,5 @@
 package introduction.domain.fundamentals.person.basic.name;
 
-class LastName {
+public class LastName {
     String value;
 }

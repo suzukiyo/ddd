@@ -11,7 +11,7 @@ public class FullName {
         return value;
     }
 
-    public FullName of(FirstName firstName, LastName lastName) {
+    public static FullName of(FirstName firstName, LastName lastName) {
         return new FullName(firstName.value + lastName.value);
     }
 }

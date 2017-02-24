@@ -14,4 +14,7 @@ public class WorkSummary {
         this.workHistories = workHistories;
         this.workSkills = workSkills;
     }
+
+    public WorkSummary() {
+    }
 }

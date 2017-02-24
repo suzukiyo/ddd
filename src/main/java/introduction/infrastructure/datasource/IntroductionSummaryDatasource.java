@@ -1,7 +1,6 @@
 package introduction.infrastructure.datasource;
 
 import introduction.domain.fundamentals.person.Person;
-import introduction.domain.model.IntroductionSummary;
 import introduction.domain.model.IntroductionSummaryRepository;
 import introduction.domain.model.hobby.Hobbies;
 import introduction.domain.model.hobby.Hobby;
@@ -11,6 +10,7 @@ import introduction.domain.model.work.history.WorkHistories;
 import introduction.domain.model.work.history.WorkHistory;
 import introduction.domain.model.work.skill.WorkSkill;
 import introduction.domain.model.work.skill.WorkSkills;
+import introduction.presentation.request.Filters;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -23,21 +23,22 @@ public class IntroductionSummaryDatasource implements IntroductionSummaryReposit
     IntroductionSummaryMapper introductionSummaryMapper;
 
     @Override
-    public IntroductionSummary findSummary() {
-        return IntroductionSummary.create(person(), hobbies(), workSummary());
-    }
-
-    private Person person() {
+    public Person person(Filters filter) {
+        if (!filter.hasPerson()) return new Person();
         return introductionSummaryMapper.findPerson();
     }
 
-    private Hobbies hobbies() {
+    @Override
+    public Hobbies hobbies(Filters filter) {
+        if (!filter.hasHobby()) return new Hobbies();
         List<Hobby> hobbies = introductionSummaryMapper.findHobbies();
         if (hobbies == null) return new Hobbies();
         return new Hobbies(hobbies);
     }
 
-    private WorkSummary workSummary() {
+    @Override
+    public WorkSummary work(Filters filter) {
+        if (!filter.hasWork()) return new WorkSummary();
         return new WorkSummary(workBasic(), workHistories(), workSkills());
     }
 

@@ -1,4 +1,4 @@
-package introduction.infrastructure.datasource;
+package introduction.infrastructure.datasource.introduction;
 
 import introduction.domain.fundamentals.person.Person;
 import introduction.domain.model.IntroductionSummaryRepository;

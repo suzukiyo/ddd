@@ -1,4 +1,4 @@
-package introduction.apllication.service;
+package introduction.apllication.service.introduction;
 
 import introduction.domain.fundamentals.person.Person;
 import introduction.domain.model.IntroductionSummary;

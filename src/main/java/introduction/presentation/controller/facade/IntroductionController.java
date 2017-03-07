@@ -15,7 +15,7 @@ class IntroductionController {
     @Autowired
     IntroductionService introductionService;
 
-    @RequestMapping(method= RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     IntroductionSummary findSummary(@ModelAttribute @Validated Queries queries) {
         return introductionService.findSummary(queries.filter());

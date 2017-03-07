@@ -7,6 +7,9 @@ public enum Gender {
     female,
     unknown;
 
+    Gender(){
+    }
+
     public String asText() {
         String template = String.format("gender.%s", this);
         return MessageResolver.of(template);

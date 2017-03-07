@@ -1,7 +1,5 @@
 package introduction.domain.fundamentals.person.basic.birthday;
 
-import introduction.apllication.configuration.messagesource.MessageResolver;
-
 public class Age {
     Integer value;
 
@@ -9,7 +7,7 @@ public class Age {
         this.value = value;
     }
 
-    public String asText() {
-        return MessageResolver.of("age", value);
+    public Integer value() {
+        return value;
     }
 }

@@ -12,7 +12,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Target({FIELD})
 @Retention(RUNTIME)
 public @interface QueryItemExistence {
-    String message() default "query item is not supported.";
+    String message() default "Query item is not supported.";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }

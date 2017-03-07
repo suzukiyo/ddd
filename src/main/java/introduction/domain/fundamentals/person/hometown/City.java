@@ -1,5 +1,9 @@
 package introduction.domain.fundamentals.person.hometown;
 
-public class City {
+class City {
     String value;
+
+    public String value() {
+        return value;
+    }
 }

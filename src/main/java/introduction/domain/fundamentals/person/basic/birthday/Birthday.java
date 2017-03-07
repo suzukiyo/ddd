@@ -8,6 +8,9 @@ public class Birthday {
     Month month;
     Day day;
 
+    Birthday(){
+    }
+
     public Age age() {
         LocalDate birthday = LocalDate.of(year.value, month.value, day.value);
         LocalDate today = LocalDate.now();

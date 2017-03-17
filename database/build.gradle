@@ -9,7 +9,7 @@ plugins {
 }
 
 if (!hasProperty('env')) { ext.env = 'development' }
-if (!hasProperty('schema')) { ext.schema = 'introduction' }
+if (!hasProperty('schema')) { ext.schema = 'intro' }
 apply from: "env/${env}.gradle"
 
 flyway {

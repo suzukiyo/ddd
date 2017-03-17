@@ -1,4 +1,4 @@
-description 'introduction'
+description 'intro'
 
 buildscript {
     ext {
@@ -25,7 +25,7 @@ repositories {
 }
 
 jar {
-    baseName = 'ddd'
+    baseName = 'intro'
     version = '0.1.0'
 }
 

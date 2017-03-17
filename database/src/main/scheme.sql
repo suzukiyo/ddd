@@ -1,5 +1,5 @@
 CREATE DATABASE auth;
-CREATE DATABASE introduction;
+CREATE DATABASE com;
 
 CREATE USER apiuser IDENTIFIED BY 'apiuser';
 

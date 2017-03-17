@@ -1,2 +1,4 @@
 rootProject.name='ddd'
 include 'database'
+include 'intro-api'
+include 'intro-manager'

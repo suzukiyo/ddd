@@ -1,8 +1,8 @@
 package com.intro.presentation.controller.advice.auth;
 
-import com.apllication.error.auth.AuthKeyException;
-import com.apllication.service.auth.AuthKeyService;
-import com.domain.fundamentals.authkey.AuthKey;
+import com.intro.application.error.auth.AuthKeyException;
+import com.intro.application.service.auth.AuthKeyService;
+import com.intro.domain.fundamentals.authkey.AuthKey;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ModelAttribute;

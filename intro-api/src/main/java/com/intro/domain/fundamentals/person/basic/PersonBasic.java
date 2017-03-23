@@ -3,11 +3,11 @@ package com.intro.domain.fundamentals.person.basic;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.domain.fundamentals.person.basic.birthday.Birthday;
-import com.domain.fundamentals.person.basic.gender.Gender;
-import com.domain.fundamentals.person.basic.name.FirstName;
-import com.domain.fundamentals.person.basic.name.FullName;
-import com.domain.fundamentals.person.basic.name.LastName;
+import com.intro.domain.fundamentals.person.basic.birthday.Birthday;
+import com.intro.domain.fundamentals.person.basic.gender.Gender;
+import com.intro.domain.fundamentals.person.basic.name.FirstName;
+import com.intro.domain.fundamentals.person.basic.name.FullName;
+import com.intro.domain.fundamentals.person.basic.name.LastName;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PersonBasic {

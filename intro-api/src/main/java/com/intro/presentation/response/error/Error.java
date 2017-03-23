@@ -2,8 +2,8 @@ package com.intro.presentation.response.error;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.presentation.response.error.type.CoreErrorType;
-import com.presentation.response.error.type.ErrorType;
+import com.intro.presentation.response.error.type.CoreErrorType;
+import com.intro.presentation.response.error.type.ErrorType;
 import org.springframework.validation.FieldError;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)

@@ -1,8 +1,8 @@
 package com.intro.presentation.controller.facade;
 
-import com.apllication.service.introduction.IntroductionService;
-import com.domain.model.IntroductionSummary;
-import com.presentation.request.Queries;
+import com.intro.application.service.introduction.IntroductionService;
+import com.intro.domain.model.IntroductionSummary;
+import com.intro.presentation.request.Queries;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;

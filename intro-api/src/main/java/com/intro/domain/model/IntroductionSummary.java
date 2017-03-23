@@ -2,9 +2,9 @@ package com.intro.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.domain.fundamentals.person.Person;
-import com.domain.model.hobby.Hobbies;
-import com.domain.model.work.WorkSummary;
+import com.intro.domain.fundamentals.person.Person;
+import com.intro.domain.model.hobby.Hobbies;
+import com.intro.domain.model.work.WorkSummary;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class IntroductionSummary {

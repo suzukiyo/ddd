@@ -1,4 +1,4 @@
-package com.intro.apllication.configuration.objectmapper;
+package com.intro.application.configuration.objectmapper;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;

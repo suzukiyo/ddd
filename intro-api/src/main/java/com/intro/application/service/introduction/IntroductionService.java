@@ -1,11 +1,11 @@
-package com.intro.apllication.service.introduction;
+package com.intro.application.service.introduction;
 
-import com.domain.fundamentals.person.Person;
-import com.domain.model.IntroductionSummary;
-import com.domain.model.IntroductionSummaryRepository;
-import com.domain.model.hobby.Hobbies;
-import com.domain.model.work.WorkSummary;
-import com.presentation.request.Filters;
+import com.intro.domain.fundamentals.person.Person;
+import com.intro.domain.model.IntroductionSummary;
+import com.intro.domain.model.IntroductionSummaryRepository;
+import com.intro.domain.model.hobby.Hobbies;
+import com.intro.domain.model.work.WorkSummary;
+import com.intro.presentation.request.Filters;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +19,6 @@ public class IntroductionService {
         Person person = introductionSummaryRepository.person(filter);
         Hobbies hobbies = introductionSummaryRepository.hobbies(filter);
         WorkSummary workSummary = introductionSummaryRepository.work(filter);
-        return new IntroductionSummary(person, hobbies, workSummary);
+        return IntroductionSummary.create(person, hobbies, workSummary);
     }
 }

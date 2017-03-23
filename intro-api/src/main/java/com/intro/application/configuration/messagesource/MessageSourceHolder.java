@@ -1,4 +1,4 @@
-package com.intro.apllication.configuration.messagesource;
+package com.intro.application.configuration.messagesource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;

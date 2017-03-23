@@ -1,7 +1,7 @@
-package com.intro.apllication.service.auth;
+package com.intro.application.service.auth;
 
-import com.domain.fundamentals.authkey.AuthKey;
-import com.domain.fundamentals.authkey.AuthKeyRepository;
+import com.intro.domain.fundamentals.authkey.AuthKey;
+import com.intro.domain.fundamentals.authkey.AuthKeyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,8 +1,8 @@
 package com.intro.presentation.controller.advice.error;
 
-import com.apllication.error.auth.AuthKeyException;
-import com.presentation.response.error.Errors;
-import com.presentation.response.error.type.CoreErrorType;
+import com.intro.application.error.auth.AuthKeyException;
+import com.intro.presentation.response.error.Errors;
+import com.intro.presentation.response.error.type.CoreErrorType;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.BindException;
@@ -31,7 +31,7 @@ class CoreExceptionAdvice implements ExceptionAdvice {
     public Errors missing(Exception exception) {
         CoreErrorType type = CoreErrorType.BadRequest;
         ExceptionAdvice.outputWarnLog(type, exception);
-        return new Errors( type, exception);
+        return new Errors(type, exception);
     }
 
     @ResponseStatus(value= HttpStatus.BAD_REQUEST)

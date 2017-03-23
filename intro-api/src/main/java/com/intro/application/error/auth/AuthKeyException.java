@@ -1,4 +1,4 @@
-package com.intro.apllication.error.auth;
+package com.intro.application.error.auth;
 
 public class AuthKeyException extends Exception{
 

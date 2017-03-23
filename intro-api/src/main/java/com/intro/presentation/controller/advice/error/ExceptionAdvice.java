@@ -1,6 +1,6 @@
 package com.intro.presentation.controller.advice.error;
 
-import com.presentation.response.error.type.ErrorType;
+import com.intro.presentation.response.error.type.ErrorType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

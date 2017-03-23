@@ -1,6 +1,6 @@
 package com.intro.domain.fundamentals.person.basic.gender;
 
-import com.apllication.configuration.messagesource.MessageResolver;
+import com.intro.application.configuration.messagesource.MessageResolver;
 
 public enum Gender {
     male,

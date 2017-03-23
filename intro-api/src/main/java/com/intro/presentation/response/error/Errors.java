@@ -1,6 +1,6 @@
 package com.intro.presentation.response.error;
 
-import com.presentation.response.error.type.ErrorType;
+import com.intro.presentation.response.error.type.ErrorType;
 import org.springframework.validation.FieldError;
 
 import java.util.ArrayList;

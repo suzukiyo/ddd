@@ -4,12 +4,13 @@ import ReactDom from 'react-dom';
 import Menu from 'view/Menu';
 import MenuAction from 'action/MenuAction';
 
-window.onload = () => {
+export default class Menu {
 
-    ReactDom.render(
-        <Menu Action={MenuAction} />,
-        document.getElementById('menu')
-    );
+    render() {
+        ReactDom.render(
+            <Menu Action={MenuAction} />,
+            document.getElementById('menu')
+        );
+    }
 
 }
-

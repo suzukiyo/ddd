@@ -4,12 +4,13 @@ import ReactDom from 'react-dom';
 import Introduction from 'view/Introduction';
 import IntroductionAction from 'action/IntroductionAction';
 
-window.onload = () => {
+export default class Introduction {
 
-    ReactDom.render(
-        <Introduction Action={IntroductionAction} />,
-        document.getElementById('limited-profile')
-    );
+    render() {
+        ReactDom.render(
+            <Introduction Action={IntroductionAction} />,
+            document.getElementById('limited-profile')
+        );
+    }
 
 }
-

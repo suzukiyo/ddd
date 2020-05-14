@@ -1,6 +1,6 @@
-package com.intro.presentation.request;
+package com.intro.domain.model;
 
-import com.domain.validation.query.item.QueryItemExistence;
+import com.intro.domain.validation.query.item.QueryItemExistence;
 import org.apache.commons.lang3.StringUtils;
 
 public class Queries {

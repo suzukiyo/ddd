@@ -4,7 +4,7 @@ import com.intro.domain.fundamentals.person.Person;
 import com.intro.domain.model.IntroductionSummaryRepository;
 import com.intro.domain.model.hobby.Hobbies;
 import com.intro.domain.model.work.WorkSummary;
-import com.intro.domain.model.Filters;
+import com.intro.presentation.request.Filters;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringRunner;

@@ -1,4 +1,4 @@
-package com.intro.presentation.request;
+package com.intro.domain.model;
 
 import java.util.Arrays;
 import java.util.Collections;

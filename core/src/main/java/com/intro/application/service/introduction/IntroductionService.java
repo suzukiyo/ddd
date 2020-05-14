@@ -1,11 +1,11 @@
 package com.intro.application.service.introduction;
 
 import com.intro.domain.fundamentals.person.Person;
+import com.intro.domain.model.Filters;
 import com.intro.domain.model.IntroductionSummary;
 import com.intro.domain.model.IntroductionSummaryRepository;
 import com.intro.domain.model.hobby.Hobbies;
 import com.intro.domain.model.work.WorkSummary;
-import com.intro.presentation.request.Filters;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

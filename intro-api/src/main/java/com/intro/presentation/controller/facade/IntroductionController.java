@@ -2,7 +2,7 @@ package com.intro.presentation.controller.facade;
 
 import com.intro.application.service.introduction.IntroductionService;
 import com.intro.domain.model.IntroductionSummary;
-import com.intro.presentation.request.Queries;
+import com.intro.domain.model.Queries;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;
